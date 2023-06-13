@@ -1,0 +1,106 @@
+.proj-scroll {
+  overflow-y: auto;
+  height: 80vh;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(22, 37, 77);
+  z-index: 10;
+}
+
+.search {
+  width: 70%;
+  background-color: rgba(166, 175, 189, 0.185);
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.436);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.436);
+}
+
+.project-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  margin-top: 0;
+  top: 0;
+  background-color: none;
+  backdrop-filter: none;
+  /* glassmorphism */
+}
+::-webkit-scrollbar {
+  background-color: transparent; /* Set scrollbar background color to transparent */
+  width: 0px;
+}
+.project-group {
+  display: flex;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+  justify-content: space-between;
+}
+.project-mess-info{
+  display: flex;
+  flex-direction: row;
+}
+.project-context {
+  margin-left: 15px;
+}
+.proj-desc,
+.proj-title {
+  margin: 0;
+}
+.proj-desc {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.436);
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 900px){
+  .chats{
+    margin: 10px;
+  }
+  .project-icon, .convo-icon{
+    width: 30px;
+    height: 30px;
+  }
+  .project-group{
+    padding: 5px;
+  }
+  .proj-desc{
+    margin: 0;
+    overflow-x:auto;
+
+  }
+
+  .proj-scroll {
+    /* overflow-y:unset; */
+    height: 60vh;
+  }
+  .proj-title{
+    font-size: 14px;
+  }
+  .star-icon{
+    width: 5px;
+    height: 5px;
+  }
+  .search{
+    width: 60%;
+    height: 20px;
+  }
+}
