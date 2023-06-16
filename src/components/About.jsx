@@ -21,17 +21,21 @@ const About = () => {
     return (
       <div>
         {about.map((desc, index) => (
-          <div className = "mapped" key={index}>
+          <div className="mapped" key={index}>
             <div className="about-cover">
-              <div className="desc-img">
-EJ              </div>
+              <div className="desc-img">EJ</div>
               <p className="desc-name">{desc.name}</p>
               <p className="desc-title">{desc.title}</p>
+              <a
+                className="download-button"
+                target="_blank"
+                href="https://drive.google.com/file/d/1ve3wTbX5w10iZXTcmxvhhINBy83zIrHH/view?usp=share_link"
+              >
+                Download Resume
+              </a>
             </div>
             <div>
-              <div className="accordian">
-
-              </div>
+              <div className="accordian"></div>
             </div>
           </div>
         ))}
